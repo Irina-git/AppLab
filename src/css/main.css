@@ -38,7 +38,7 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 108px;
+    margin-top: 53px;
 }
 
 .header_logo a{
@@ -80,20 +80,37 @@ hr {
 .intro{
     width: 100%;
     height: 100vh;
-    max-height: 1005px;
+    min-height: 864px;
 
     display: flex;
 
+    background: url("../img/background.png") -5% 14%  no-repeat,
+    url("../img/background_2.png") 75% 20%  no-repeat,
+    url("../img/background_img.jpg") no-repeat bottom;
+    background-size: auto, auto, contain; /* Меняем масштаб */
 
-    background: url("../img/background_img.jpg") ;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
+
 }
 
 .intro_inner{
     display: flex;
     flex-wrap: wrap;
+}
+
+.award{
+    margin-top: 174px;
+    margin-bottom: 8px;
+    padding-left: 47px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #242f51;
+    background: url(../img/1.png) 2% 44% no-repeat,
+    url(../img/2.png) no-repeat,
+    url(../img/award_bc.png)no-repeat;
+    background-size:  auto,auto,auto;;
+
+
 }
 
 .intro_info{
@@ -108,8 +125,6 @@ hr {
 }
 
 .intro_content h1{
-    margin-top: 174px;
-
     font-size: 60px;
     font-weight: bolder;
     color:#242f51;
