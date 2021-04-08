@@ -367,3 +367,49 @@ hr {
 .jackpots_set_3 p{
     margin-top: 3px;
 }
+
+/*----------Design-------------*/
+.design{
+    padding-top: 89px;
+}
+
+.design_content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.design_img img{
+    width: 100%;
+}
+
+.design_text{
+    width: 100%;
+    max-width: 445px;
+    margin-top: 100px;
+    margin-left: -38px;
+}
+
+.design_text h2{
+    font-size: 36px;
+    font-weight: bolder;
+    line-height: 1.4;
+    padding-right: 20px;
+}
+
+.design_text p{
+    color: #616368;
+}
+
+.design_btn{
+    margin-top: 42px;
+}
+
+.design_btn a{
+    text-decoration: none;
+    font-weight: bold;
+    background: #2500f9;
+    padding: 22px 49px;
+    border-radius: 41px;
+    color: #fff;
+    margin-right: 26px;
+}
