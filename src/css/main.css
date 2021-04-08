@@ -196,3 +196,89 @@ hr {
     max-width: 100%;
     height: auto;
 }
+
+/*-----------Features-----------*/
+.features{
+    padding: 89px 0px;
+}
+
+.features_content{
+    display: flex;
+    justify-content: center;
+}
+
+.features_inner--back{
+    background: url(../img/features/phone_back.png) 95% no-repeat;
+    width: 100%;
+    max-width: 628px;
+}
+
+.features_phone{
+    margin-bottom: 109px;
+    margin-left: 68px;
+}
+
+.features_inner--info{
+    width: 100%;
+    max-width:460px;
+    margin-left: 60px;
+}
+
+.features_inner--info h3{
+    font-size: 36px;
+    font-weight: bolder;
+    padding-right: 12px;
+    line-height: 1.2;
+}
+
+.features_block{
+    margin-top: 64px;
+    margin-bottom: 45px;
+}
+
+.features_set{
+    background: url(../img/features/fast.png) 3.8% 70% no-repeat,
+    url(../img/features/fast_bc.png) 0% 93% no-repeat;
+    background-size: auto, auto;
+}
+
+
+.features_set h5{
+    font-size: 20px;
+    font-weight: bolder;
+    color:#f55767 ;
+}
+
+.features_text{
+    margin-left: 107px;
+    padding-right: 53px;
+    margin-bottom: 45px;
+}
+
+.features_set_2{
+    background: url(../img/features/prototyping.png) 3.8% 70% no-repeat,
+    url(../img/features/prototyping_bc.png) 0% 93% no-repeat;
+    background-size: auto, auto;
+}
+
+
+.features_set_2 h5{
+    font-size: 20px;
+    font-weight: bolder;
+    color:#2563ff ;
+}
+
+.features_set_3{
+    background: url(../img/features/vector.png) 3.8% 70% no-repeat,
+    url(../img/features/vector_bc.png) 0% 93% no-repeat;
+    background-size: auto, auto;
+}
+
+
+.features_set_3 h5{
+    font-size: 20px;
+    font-weight: bolder;
+    color:#40975f ;
+}
+
+
