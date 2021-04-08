@@ -282,3 +282,88 @@ hr {
 }
 
 
+/*----------Jackpots-------------*/
+
+.jackpots_title{
+    display: flex;
+}
+
+.jackpots_title h2{
+    width: 100%;
+    max-width: 435px;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-right: 74px;
+    margin-left: 41px;
+}
+
+.jackpots_title p{
+    padding: 43px 89px;
+    color: #616368;
+    border-left: 1px solid #b9b9b8;
+}
+
+.jackpots_inner{
+    display: flex;
+    margin-top: 52px;
+    justify-content: space-evenly;
+}
+
+.jackpots_set{
+    background: url(../img/jackpots/auto.png) 7% 10% no-repeat,
+    url(../img/jackpots/auto_bc.png) no-repeat;
+    background-size: auto, auto;
+    width: 100%;
+    max-width: 296px;
+    margin-left: -29px;
+}
+
+.jackpots_text{
+    padding-top: 96px;
+}
+
+.jackpots_text h5{
+    font-size: 20px;
+    font-weight: bolder;
+    color:#f55767 ;
+}
+
+.jackpots_text p{
+    margin-top: 3px;
+}
+
+.jackpots_set_2{
+    background: url(../img/jackpots/network.png) 7% 10% no-repeat,
+    url(../img/jackpots/network_bc.png) no-repeat;
+    background-size: auto, auto;
+    width: 100%;
+    max-width: 296px;
+}
+
+.jackpots_set_2 h5{
+    font-size: 20px;
+    font-weight: bolder;
+    color:#2563ff  ;
+}
+
+.jackpots_set_2 p{
+     margin-top: 3px;
+ }
+
+.jackpots_set_3{
+    background: url(../img/jackpots/badge.png) 7% 10% no-repeat,
+    url(../img/jackpots/badge_bc.png) no-repeat;
+    background-size: auto, auto;
+    width: 100%;
+    max-width: 296px;
+}
+
+.jackpots_set_3 h5{
+    font-size: 20px;
+    font-weight: bolder;
+    color:#40975f  ;
+}
+
+.jackpots_set_3 p{
+    margin-top: 3px;
+}
