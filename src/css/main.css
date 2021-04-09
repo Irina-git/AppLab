@@ -7,6 +7,11 @@ body{
 
     background-color: #fdfdfe;
 }
+
+.page{
+    overflow: hidden;
+}
+
 *,
 *:before,
 *:after{
@@ -370,7 +375,7 @@ hr {
 
 /*----------Design-------------*/
 .design{
-    padding-top: 89px;
+    padding-top: 134px;
 }
 
 .design_content{
@@ -417,7 +422,7 @@ hr {
 /*----------Benefits----------*/
 
 .benefits{
-    padding-top: 104px;
+    padding-top: 134px;
 }
 .benefits_title{
     width: 100%;
@@ -485,3 +490,165 @@ hr {
     url(../img/benefits/service_bc.png) no-repeat center 0;
 
 }
+
+/*------------Ultimate----------*/
+
+.ultimate{
+    padding-top: 130px;
+}
+
+.ultimate_content{
+    display: flex;
+}
+
+.ultimate_box{
+    width: 100%;
+    max-width: 650px;
+    margin-left: 253px;
+}
+
+.ultimate_box h3{
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.ultimate_box p{
+    padding-bottom: 50px;
+
+}
+
+.ultimate_inner{
+    display: flex;
+
+}
+
+.ultimate_set{
+    background: url(../img/ultimate/app.png) 9% 6% no-repeat,
+    url(../img/ultimate/app_bc.png) no-repeat;
+    background-size: auto, auto;
+    margin-right: 70px;
+}
+.ultimate_text{
+    padding-top: 100px;
+    padding-bottom: 39px;
+}
+.ultimate_text h5{
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 22px;
+}
+
+.ultimate_set_2{
+    background: url(../img/ultimate/ui.png) 9% 6% no-repeat,
+    url(../img/ultimate/custom_bc.png) no-repeat;
+    background-size: auto, auto;
+}
+
+.ultimate_set_3{
+    background: url(../img/ultimate/computer.png) 9% 6% no-repeat,
+    url(../img/ultimate/computer_bc.png) no-repeat;
+    background-size: auto, auto;
+    margin-right: 70px;
+}
+
+.ultimate_set_4{
+    background: url(../img/ultimate/customer-service.png) 9% 6% no-repeat,
+    url(../img/ultimate/ui_bc.png) no-repeat;
+    background-size: auto, auto;
+}
+
+.ultimate_box_img{
+    position: relative;
+}
+
+.ultimate_bc{
+    position: absolute;
+    z-index: 1;
+}
+
+.ultimate_phone2{
+    position: absolute;
+    z-index: 2;
+    bottom: 138px;
+    left: 194px;
+}
+
+.ultimate_phone{
+    position: absolute;
+    z-index: 3;
+    bottom: 81px;
+    left: 409px;
+}
+
+.design_btn--ultimate{
+    margin-left: 245px;
+    margin-top: -32px;
+}
+
+/*--------Rates--------*/
+
+.rates{
+    padding-top: 134px;
+}
+
+.rates_title{
+    width: 100%;
+    max-width: 670px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.rates_title h2{
+    font-size: 36px;
+    font-weight: bolder;
+    line-height: 1.3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
