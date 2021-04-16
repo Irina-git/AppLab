@@ -840,6 +840,7 @@ hr {
   .clients_position{
     padding-top: 60px;
     padding-left: 22px;
+    position: relative;
 
     span{
       font-size: 18px;
@@ -850,10 +851,65 @@ hr {
 
 }}
 
+.arrow {
+  position: absolute;
+  top: 50%;
+  width: 3vmin;
+  height: 3vmin;
+  background: transparent;
+  border-top: 1vmin solid $primary-color;
+  border-right: 1vmin solid $primary-color;
+  box-shadow: 0 0 0 lightgray;
+  transition: all 200ms ease;
 
+  &.left {
+    left: 289px;
+    transform: translate3d(0,-50%,0) rotate(-135deg);
+  }
 
+  &.right {
+    left: 410px;
+    transform: translate3d(0,-50%,0) rotate(45deg);
+  }
 
+  &:hover {
+    border-color: orange;
+    box-shadow: 0.5vmin -0.5vmin 0 white;
+  }
 
+  &:before { // for better hit area
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%,-60%) rotate(45deg);
+    width: 200%;
+    height: 200%;
+  }
+}
+
+/*--------FAQ--------*/
+
+.faq{
+  padding-top: 138px;
+  padding-bottom: 138px;
+  .accordion{
+    color: #616368;
+    margin: 0 auto;
+  }
+  .accordion-item{
+    background-color: #f5f7fa;
+  }
+  .accordion-button{
+    background-color: #f5f7fa;
+    font-size: 20px;
+    font-weight: bold;
+    color: $primary-color;
+  }
+  .accordion-button.collapsed{
+    font-weight: 600;
+  }
+}
 
 
 
