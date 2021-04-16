@@ -891,8 +891,8 @@ hr {
 /*--------FAQ--------*/
 
 .faq{
-  padding-top: 138px;
-  padding-bottom: 138px;
+  padding: 138px 0;
+
   .accordion{
     color: #616368;
     margin: 0 auto;
@@ -911,6 +911,40 @@ hr {
   }
 }
 
+/*--------Footer--------*/
+.footer{
+  padding-left: 100px;
+  padding-top: 10px;
+
+  .footer_inner{
+    display: flex;
+    .footer_guy{
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .footer_block {
+    width: 100%;
+    min-width: 632px;
+
+    h2{
+    font-size:48px ;
+    font-weight: bold;
+    }
+    p{
+      color: #616368;
+      padding: 40px 0;
+    }
+  }
+  .apps{
+    display: flex;
+    .google{
+    padding-right: 35px;
+    }
+  }
+
+}
 
 
 
