@@ -919,14 +919,17 @@ hr {
   .footer_inner{
     display: flex;
     .footer_guy{
+      margin-bottom: -70px;
       width: 100%;
       display: block;
     }
   }
 
   .footer_block {
+    margin-top: 78px;
+    margin-left: 81px;
     width: 100%;
-    min-width: 632px;
+    max-width: 632px;
 
     h2{
     font-size:48px ;
@@ -941,11 +944,62 @@ hr {
     display: flex;
     .google{
     padding-right: 35px;
+    cursor: pointer;
+    }
+    .appStore{
+      cursor: pointer;
     }
   }
 
 }
 
+/*--------Socials--------*/
+.socials{
+  background-color: #09142e;
+  .header_logo-socials{
+    padding-top: 110px;
+    padding-bottom: 45px;
+    text-align: center;
+
+    strong{
+      color: #ffffff;
+    }
+  }
+  .nav_socials{
+    text-align: center;
+    padding-bottom: 45px;
+
+    a{
+      text-decoration: none;
+    }
+
+    .links{
+      color: #ffffff;
+      padding-right: 38px;
+      font-size: 16px;
+      cursor: pointer;
+
+    }
+  }
+  .social_media{
+    padding-bottom: 80px;
+    text-align: center;
+    i{
+      padding-right: 23px;
+      font-size: 25px;
+      cursor: pointer;
+      &:hover {
+        color:#ffffff;
+      }
+    }
+  }
+  p{
+    text-align: center;
+    color:#505461 ;
+    padding-bottom: 80px;
+    margin-bottom: 0;
+  }
+}
 
 
 

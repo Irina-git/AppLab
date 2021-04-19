@@ -815,12 +815,15 @@ hr {
   display: flex;
 }
 .footer .footer_inner .footer_guy {
+  margin-bottom: -70px;
   width: 100%;
   display: block;
 }
 .footer .footer_block {
+  margin-top: 78px;
+  margin-left: 81px;
   width: 100%;
-  min-width: 632px;
+  max-width: 632px;
 }
 .footer .footer_block h2 {
   font-size: 48px;
@@ -835,6 +838,54 @@ hr {
 }
 .footer .apps .google {
   padding-right: 35px;
+  cursor: pointer;
+}
+.footer .apps .appStore {
+  cursor: pointer;
+}
+
+/*--------Socials--------*/
+.socials {
+  background-color: #09142e;
+}
+.socials .header_logo-socials {
+  padding-top: 110px;
+  padding-bottom: 45px;
+  text-align: center;
+}
+.socials .header_logo-socials strong {
+  color: #ffffff;
+}
+.socials .nav_socials {
+  text-align: center;
+  padding-bottom: 45px;
+}
+.socials .nav_socials a {
+  text-decoration: none;
+}
+.socials .nav_socials .links {
+  color: #ffffff;
+  padding-right: 38px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.socials .social_media {
+  padding-bottom: 80px;
+  text-align: center;
+}
+.socials .social_media i {
+  padding-right: 23px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.socials .social_media i:hover {
+  color: #ffffff;
+}
+.socials p {
+  text-align: center;
+  color: #505461;
+  padding-bottom: 80px;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
