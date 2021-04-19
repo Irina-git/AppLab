@@ -123,6 +123,7 @@ hr {
   font-size: 60px;
   font-weight: bolder;
   color: #242f51;
+  padding-bottom: 18px;
 }
 
 .intro_content p {
@@ -222,6 +223,7 @@ hr {
   font-weight: bolder;
   padding-right: 12px;
   line-height: 1.2;
+  padding-bottom: 18px;
 }
 
 .features_block {
@@ -376,6 +378,7 @@ hr {
   font-weight: bolder;
   line-height: 1.4;
   padding-right: 20px;
+  padding-bottom: 18px;
 }
 
 .design_text p {
@@ -412,6 +415,7 @@ hr {
   font-size: 36px;
   font-weight: bolder;
   line-height: 1.3;
+  padding-bottom: 13px;
 }
 
 .benefits_inner {
@@ -475,6 +479,7 @@ hr {
 .ultimate_box h3 {
   font-size: 36px;
   font-weight: bolder;
+  padding-bottom: 18px;
 }
 
 .ultimate_box p {
