@@ -46,6 +46,18 @@ hr {
   margin-top: 53px;
 }
 
+.header.fixed {
+  padding: 12px;
+  background: #ffffff;
+  position: fixed;
+  top: -39px;
+  right: 0;
+  left: 0;
+  transform: translate3d(0, 0, 0);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
 .header_logo a {
   text-decoration: none;
   font-size: 30px;
@@ -68,7 +80,7 @@ hr {
 }
 
 .nav_links {
-  padding: 0 10px;
+  padding: 24px 10px;
 }
 
 .nav_links:last-child {
@@ -80,11 +92,80 @@ hr {
   color: #fff;
 }
 
+.nav_toggle {
+  width: 30px;
+  padding: 10px 0;
+  display: none;
+  font-size: 0;
+  color: transparent;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  top: 66px;
+  right: 24px;
+  z-index: 1;
+}
+
+.nav-toggle:focus {
+  outline: 0;
+}
+
+.nav_toggle_item {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #242f51;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition: background-color 0.2s linear;
+}
+
+.nav_toggle.active .nav_toggle_item {
+  background: none;
+}
+
+.nav_toggle_item:before,
+.nav_toggle_item:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  border: none;
+  background-color: #242f51;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  transition: transform 0.2s linear;
+}
+
+.nav_toggle_item:before {
+  top: -8px;
+}
+
+.nav_toggle_item:after {
+  bottom: -8px;
+}
+
+.nav_toggle.active .nav_toggle_item:before {
+  transform-origin: left top;
+  transform: rotate(45deg) translate3d(0px, -2px, 0px);
+}
+
+.nav_toggle.active .nav_toggle_item:after {
+  transform-origin: left bottom;
+  transform: rotate(-45deg) translate3d(0px, 3px, 0px);
+}
+
 /*----------Intro----------*/
 .intro {
   width: 100%;
   height: 100vh;
   min-height: 864px;
+  max-height: 964px;
   display: flex;
   background: url("../img/background.png") -5% 14% no-repeat, url("../img/background_2.png") 75% 20% no-repeat, url("../img/background_img.jpg") no-repeat bottom;
   background-size: auto, auto, contain;
@@ -359,7 +440,7 @@ hr {
 
 .design_content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .design_img img {
@@ -370,7 +451,7 @@ hr {
   width: 100%;
   max-width: 445px;
   margin-top: 100px;
-  margin-left: -38px;
+  margin-left: 108px;
 }
 
 .design_text h2 {
@@ -473,7 +554,6 @@ hr {
 .ultimate_box {
   width: 100%;
   max-width: 650px;
-  margin-left: 253px;
 }
 
 .ultimate_box h3 {
@@ -530,24 +610,24 @@ hr {
 .ultimate_bc {
   position: absolute;
   z-index: 1;
+  left: 47px;
 }
 
 .ultimate_phone2 {
   position: absolute;
   z-index: 2;
   bottom: 138px;
-  left: 194px;
+  left: 7px;
 }
 
 .ultimate_phone {
   position: absolute;
   z-index: 3;
   bottom: 81px;
-  left: 409px;
+  left: 210px;
 }
 
 .design_btn--ultimate {
-  margin-left: 245px;
   margin-top: -32px;
 }
 
@@ -713,13 +793,19 @@ hr {
 /*--------Clients--------*/
 .clients {
   display: flex;
+  position: relative;
 }
 .clients .clients_photos {
   background: url("../img/clients/1.png") 36% 0% no-repeat, url("../img/clients/2.png") 80% 7% no-repeat, url("../img/clients/3.png") 4% 20% no-repeat, url("../img/clients/4.png") 43% 44% no-repeat, url("../img/clients/5.png") 9% 58% no-repeat, url("../img/clients/6.png") 67% 63% no-repeat, url("../img/clients/7.png") 35% 98% no-repeat;
+  position: absolute;
+  left: -6px;
+  width: 100%;
+  max-width: 760px;
 }
 .clients .clients_info {
   width: 100%;
   max-width: 605px;
+  margin-left: 606px;
 }
 .clients .clients_info .clients_title h2 {
   margin-bottom: 26px;
@@ -891,6 +977,509 @@ hr {
   color: #505461;
   padding-bottom: 80px;
   margin-bottom: 0;
+}
+
+@media (max-width: 1765px) {
+  .footer .footer_inner .footer_guy {
+    margin-bottom: -55px;
+  }
+}
+@media (max-width: 1612px) {
+  .intro_content h1 {
+    font-size: 52px;
+  }
+  .intro_content p {
+    font-size: 17px;
+  }
+
+  .footer .footer_block h2 {
+    font-size: 42px;
+  }
+  .footer .footer_block p {
+    padding: 22px 0;
+  }
+}
+@media (max-width: 1535px) {
+  .footer .footer_block h2 {
+    font-size: 32px;
+  }
+  .footer .footer_block p {
+    padding: 13px 0;
+    font-size: 13px;
+  }
+}
+@media (max-width: 1395px) {
+  .intro_content h1 {
+    font-size: 44px;
+  }
+
+  .jackpots_title h2 {
+    font-size: 37px;
+  }
+
+  .clients .clients_photos {
+    display: none;
+  }
+
+  .clients .clients_info {
+    margin: 0 auto;
+  }
+
+  .clients_title {
+    text-align: center;
+  }
+}
+@media (max-width: 1190px) {
+  .nav {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffc107;
+  }
+
+  .nav.active {
+    display: block;
+  }
+
+  .nav_links {
+    display: block;
+    margin: 0;
+    padding: 8px 20px;
+  }
+  .nav_links:last-child {
+    color: #242f51;
+    font-weight: inherit;
+    background: none;
+    padding: 8px 20px;
+    margin-left: 0;
+    border-radius: 0;
+  }
+
+  .nav_toggle {
+    display: block;
+  }
+
+  button,
+button:active,
+button:focus {
+    outline: none;
+  }
+
+  .features_inner--info {
+    margin-left: 0;
+  }
+
+  .design_text {
+    margin-left: 14px;
+  }
+
+  .ultimate {
+    display: none;
+  }
+
+  .clients .clients_slide .clients_name {
+    margin-left: 105px;
+  }
+
+  .arrow.left {
+    left: -184px;
+  }
+
+  .arrow.right {
+    left: 357px;
+  }
+
+  .footer .footer_block {
+    margin-left: -72px;
+  }
+}
+@media (max-width: 1108px) {
+  .features {
+    padding: 0;
+  }
+
+  .features_inner--info h3 {
+    font-size: 33px;
+  }
+  .features_inner--info h5 {
+    font-size: 17px;
+  }
+  .features_inner--info p {
+    font-size: 13px;
+  }
+
+  .jackpots_title h2 {
+    font-size: 32px;
+    margin-right: 24px;
+    margin-left: 122px;
+  }
+
+  .jackpots_title p {
+    padding: 6px 82px;
+  }
+
+  .jackpots_inner {
+    margin-top: 22px;
+    margin-left: 83px;
+    justify-content: center;
+  }
+
+  .design_text h2 {
+    font-size: 31px;
+  }
+
+  .design_text p {
+    font-size: 13px;
+  }
+
+  .benefits {
+    padding-top: 58px;
+  }
+
+  .benefits_title h2 {
+    font-size: 31px;
+  }
+
+  .benefits_title p {
+    font-size: 13px;
+  }
+
+  .benefits_text h5 {
+    font-size: 17px;
+  }
+
+  .benefits_text p {
+    font-size: 13px;
+  }
+
+  .benefits_inner {
+    margin-top: 45px;
+  }
+
+  .rates {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+
+  .rates_title h2 {
+    font-size: 31px;
+  }
+
+  .rates_title p {
+    font-size: 13px;
+    margin-bottom: 37px;
+  }
+
+  .row {
+    margin-top: 58px;
+  }
+
+  .clients .clients_info .clients_title h2 {
+    font-size: 31px;
+  }
+
+  .clients .clients_info .clients_title p {
+    font-size: 13px;
+  }
+
+  .faq {
+    padding: 54px 0;
+  }
+
+  .footer {
+    padding: 0;
+  }
+
+  .footer .footer_inner .footer_guy {
+    display: none;
+  }
+
+  .footer .footer_block {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .footer .apps {
+    justify-content: space-evenly;
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 987px) {
+  .intro_mobile {
+    margin-left: 14px;
+  }
+
+  .intro_content h1 {
+    font-size: 34px;
+  }
+
+  .features_inner--info h3 {
+    font-size: 28px;
+  }
+
+  .features_phone {
+    margin-bottom: 53px;
+    margin-left: 16px;
+  }
+
+  .jackpots_title h2 {
+    font-size: 22px;
+  }
+
+  .jackpots_title p {
+    padding: 0 101px;
+    font-size: 13px;
+  }
+
+  .jackpots_inner h5 {
+    font-size: 17px;
+  }
+
+  .jackpots_inner p {
+    font-size: 13px;
+  }
+
+  .design {
+    padding-top: 51px;
+  }
+
+  .design_text h2 {
+    font-size: 24px;
+  }
+
+  .design_btn a {
+    padding: 19px 38px;
+  }
+}
+@media (max-width: 844px) {
+  .intro_content h1 {
+    font-size: 29px;
+  }
+
+  .intro_btn1 {
+    padding: 19px 38px;
+  }
+
+  .intro_content p {
+    font-size: 14px;
+  }
+
+  .companies {
+    display: block;
+  }
+
+  .company_logo {
+    padding: 0;
+  }
+
+  .company_logo img {
+    margin: 20px auto;
+  }
+
+  .features {
+    padding: 15px;
+  }
+
+  .features_inner--back {
+    display: none;
+  }
+
+  .features_inner--info {
+    text-align: center;
+  }
+
+  .jackpots_title h2 {
+    font-size: 20px;
+    margin-right: 28px;
+    margin-left: 78px;
+  }
+
+  .jackpots_title p {
+    padding: 0px 52px;
+  }
+
+  .jackpots_set {
+    margin: 0;
+  }
+
+  .design_btn a {
+    padding: 15px 35px;
+    font-size: 13px;
+  }
+
+  .design_text {
+    margin-top: 59px;
+  }
+
+  .benefits_title h2 {
+    font-size: 28px;
+  }
+
+  .rates_title h2 {
+    font-size: 28px;
+  }
+
+  .clients .clients_info .clients_title h2 {
+    font-size: 28px;
+  }
+
+  .footer .footer_block h2 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 830px) {
+  .award {
+    margin-top: 80px;
+    background: url(../img/1.png) 29.5% 48% no-repeat, url(../img/2.png) no-repeat 29%, url(../img/award_bc.png) no-repeat 53%;
+  }
+
+  .intro_inner {
+    display: block;
+  }
+
+  .intro_content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .intro_info {
+    width: 100%;
+    text-align: center;
+    max-width: none;
+  }
+
+  .intro_mobile {
+    height: 569px;
+    display: block;
+    max-width: 100%;
+    margin: 30px auto;
+  }
+}
+@media (max-width: 690px) {
+  .award {
+    background: url(../img/1.png) 25.5% 46% no-repeat, url(../img/2.png) no-repeat 25%, url(../img/award_bc.png) no-repeat 53%;
+  }
+
+  .jackpots_inner {
+    margin-top: 34px;
+    margin-left: 37px;
+  }
+
+  .jackpots_title h2 {
+    font-size: 17px;
+    margin-right: 19px;
+    margin-left: 57px;
+  }
+}
+@media (max-width: 596px) {
+  .award {
+    background: url(../img/1.png) 20.5% 46% no-repeat, url(../img/2.png) no-repeat 20%, url(../img/award_bc.png) no-repeat 53%;
+  }
+
+  .jackpots_title h2 {
+    margin-right: 19px;
+    margin-left: 36px;
+  }
+
+  .jackpots_inner {
+    margin-left: 24px;
+  }
+
+  .jackpots_inner h5 {
+    font-size: 14px;
+  }
+
+  .jackpots_inner p {
+    font-size: 10px;
+  }
+
+  .design_text {
+    margin-top: 5px;
+  }
+
+  .design_text h2 {
+    font-size: 20px;
+  }
+
+  .design_btn a {
+    padding: 11px 26px;
+    font-size: 12px;
+  }
+
+  .benefits_title h2 {
+    font-size: 23px;
+  }
+
+  .benefits_text p {
+    font-size: 10px;
+  }
+
+  .clients_slide {
+    text-align: center;
+  }
+
+  .arrow.right {
+    left: 319px;
+  }
+
+  .arrow.left {
+    left: -172px;
+  }
+}
+@media (max-width: 525px) {
+  .award {
+    display: none;
+  }
+
+  .intro_info {
+    margin-top: 90px;
+  }
+
+  .jackpots_title {
+    display: block;
+    text-align: center;
+  }
+
+  .jackpots_title p {
+    padding: 10px 44px;
+    border-left: 0;
+    border-top: 1px solid #b9b9b8;
+    margin-top: 11px;
+  }
+
+  .jackpots_title h2 {
+    margin: 0;
+  }
+
+  .jackpots_inner {
+    display: block;
+    margin: 0;
+  }
+
+  .jackpots_set {
+    margin: 0 auto;
+    text-align: center;
+    background: url(../img/jackpots/auto.png) 51% 19% no-repeat, url(../img/jackpots/auto_bc.png) 50% 2% no-repeat;
+  }
+
+  .jackpots_set_2 {
+    margin: 0 auto;
+    text-align: center;
+    background: url(../img/jackpots/network.png) 51% 19% no-repeat, url(../img/jackpots/auto_bc.png) 50% 2% no-repeat;
+  }
+
+  .jackpots_set_3 {
+    margin: 0 auto;
+    text-align: center;
+    background: url(../img/jackpots/badge.png) 51% 19% no-repeat, url(../img/jackpots/auto_bc.png) 50% 2% no-repeat;
+  }
+
+  .arrow.right {
+    left: 268px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
