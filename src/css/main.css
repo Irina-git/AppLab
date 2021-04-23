@@ -82,6 +82,9 @@ hr {
 .nav_links {
   padding: 24px 10px;
 }
+.nav_links:hover {
+  transform: scale(1.2);
+}
 
 .nav_links:last-child {
   font-weight: bold;
@@ -90,6 +93,10 @@ hr {
   margin-left: 69px;
   border-radius: 41px;
   color: #fff;
+}
+
+.nav_links:last-child:hover {
+  transform: scale(1.2);
 }
 
 .nav_toggle {
@@ -230,9 +237,17 @@ hr {
   margin-right: 26px;
 }
 
+.intro_btn1:hover {
+  color: #ffffff;
+}
+
 .intro_btn2 {
   font-weight: normal;
   color: #2500f9;
+}
+
+.intro_btn2:hover {
+  transform: scale(1.2);
 }
 
 .intro_mobile {
@@ -843,37 +858,31 @@ hr {
   color: #242f51;
 }
 
-.arrow {
+.slick-arrow {
   position: absolute;
-  top: 50%;
+  top: 81%;
   width: 3vmin;
   height: 3vmin;
+  color: transparent;
   background: transparent;
   border-top: 1vmin solid #242f51;
   border-right: 1vmin solid #242f51;
+  border-left: none;
+  border-bottom: none;
   box-shadow: 0 0 0 lightgray;
   transition: all 200ms ease;
 }
-.arrow.left {
+.slick-arrow.slick-prev {
   left: 289px;
   transform: translate3d(0, -50%, 0) rotate(-135deg);
 }
-.arrow.right {
+.slick-arrow.slick-next {
   left: 410px;
   transform: translate3d(0, -50%, 0) rotate(45deg);
 }
-.arrow:hover {
+.slick-arrow:hover {
   border-color: orange;
   box-shadow: 0.5vmin -0.5vmin 0 white;
-}
-.arrow:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-40%, -60%) rotate(45deg);
-  width: 200%;
-  height: 200%;
 }
 
 /*--------FAQ--------*/
